@@ -82,7 +82,7 @@ then
 	fi
 
 	# Load v4lwloopback module
-	sudo modprobe v4l2loopback video_nr="$DEVICE_NUMBER" 'card_label=Mon2Cam'
+	sudo modprobe v4l2loopback video_nr="$DEVICE_NUMBER" exclusive_caps=1 'card_label=Mon2Cam'
 fi
 
 # Option checking
